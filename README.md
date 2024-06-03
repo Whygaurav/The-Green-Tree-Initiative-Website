@@ -4,3 +4,6 @@
 https://whygaurav.github.io/The-Green-Tree-Initiative-Website/
 
 Note: This has the mobile and tab view.
+
+### Tab View Screenshot:
+![alt text](whygaurav.github.io_The-Green-Tree-Initiative-Website_.png)
