@@ -1,0 +1,691 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: rgb(11, 11, 87);
+}
+@font-face {
+    font-family: "flood-std-regular";
+    src: url('./Font/Flood\ Std\ Regular/Flood Std Regular.otf');
+}
+
+/* ------------HEADER SECTION-------------- */
+.header-content{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-column-gap: 40px;
+    grid-row-gap: 30px;
+    padding: 15px 20px ;
+    margin: 30px 40px 30px 0px;
+}
+.header-title{
+    grid-row: 1;
+    grid-column: 1;
+    font-size: 22px;
+    padding: 9px 0;
+}
+.nav-bar{
+    margin-left: 15px;
+    grid-row: 1;
+    grid-column: 2;
+    line-height: 25px;
+}
+.navbar-list{
+    list-style: none;
+}
+.donate-button{
+    grid-row: 2;
+    grid-column:1/span 2;
+    margin-bottom: 5%;
+    border: none;
+    border-radius: 50px;
+    background-color: #c1f7d5;
+    font-size: 20px;
+    font-weight: 700;
+    height: 65%;
+}
+
+/* ------------MAIN BODY-------------- */
+
+/* ----------ISSUE SECTION----------- */
+
+.issue-section{
+    position: relative;
+    background-image: url("./home/annie-spratt-135307-unsplash@3x.png");
+    height:70vh;
+    background-repeat: no-repeat;
+    background-size: 300%;
+    background-position: 75% 0%;
+}
+.issue-brush-text{
+    position: absolute;
+    font-family: "flood-std-regular";
+    color: white;
+    font-size: 50px;
+    margin: 40px;
+}
+.issue-card{
+    position: absolute;
+    top: 55%;
+    width: 80%;
+    text-align: center;
+    background-color: white;
+    padding: 25px;
+    margin-left: 5vh;
+}
+.issue-title{
+    position: absolute;
+    top: -10%;
+    left: 25%;
+    background-color: rgb(12, 12, 76);
+    color: white;
+    padding: 1.5vh 5vh;
+    
+}
+.issue-description{
+    margin: 15px 0;
+    font-size: 2.8vh;
+    font-weight: 700;
+    line-height: 3.5vh;
+}
+.issue-article-link{
+    line-height: 3vh;
+}
+
+/* -------TAKE ACTION SECTION------- */
+
+.take-action-section{
+    position: relative;
+    margin-top: -2%;
+    background-color: #c1f7d5;
+    padding: 70px 30px;
+}
+.take-action-title{
+    position: absolute;
+    top: -5%;
+    left: 30%;
+    padding: 1.5vh 4vh;
+    background-color: rgb(12, 12, 76);
+    color: white;
+}
+.action-cards{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 4vh;
+    grid-column-gap: 2vh;
+    line-height: 3.2vh;
+}
+
+/* -----WHAT WE DO SECTION----- */
+
+.what-we-do-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(12, 12, 76);
+    color: white;
+}
+.what-we-do-title{
+    margin-top: 5vh;
+    margin-bottom: 3vh;
+    padding: 1.5vh 4vh;
+    color: rgb(12, 12, 76);
+    background-color: white;
+}
+.what-we-do-description{
+    text-align: center;
+    padding: 0vh 4.5vh;
+    font-size: 3vh;
+    line-height: 4.2vh;
+    font-weight: 700;
+    margin-bottom: 12vh;
+    color: white;
+}
+/* -----What we do card----- */
+.card-what-we-do{
+    background-color: white;
+    width: 42vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 8vh;
+}
+.image-what-we-do-card{
+    width: 33vh;
+    height: 200px;
+    margin-top: -5vh;
+    margin-bottom: 4vh;
+}
+.title-what-we-do-card{
+    font-size: 2.7vh;
+    margin-bottom: 2.8vh;
+    font-weight: 800;
+}
+.description-what-we-do-card{
+    text-align: center;
+    line-height: 2.8vh;
+    padding: 0 4vh;
+    font-size: 2.1vh;
+    margin-bottom: 4vh;
+}
+.button-what-we-do-card{
+    background-color: #c1f7d5;
+    font-size: 2.3vh;
+    font-weight: 600;
+    padding: 1.2vh 4.5vh;
+    border-radius: 5vh;
+    border: none;
+    margin-bottom: 4vh;
+}
+
+/* -----DID YOU KNOW SECTION----- */
+
+.did-you-know-section{
+    background-image: url("./home/did-you-know-background@3x.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 60%;
+}
+.did-you-know-text{
+    font-family: "flood-std-regular";
+    color: white;
+    font-size: 40px;
+    padding: 45px 40px;
+    margin-right: 10vh;
+}
+.did-you-know-button{
+    background-color: #c1f7d5;
+    font-size: 2.3vh;
+    font-weight: 600;
+    padding: 1.2vh 1.8vh;
+    border-radius: 5vh;
+    border: none;
+    margin: 0 5vh 5vh 5vh;
+}
+
+/* --------Did you know card-------- */
+
+.did-you-know-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title-did-you-know{
+    transform: translateY(50%);
+    padding: 1.5vh 2.4vh;
+    background-color: rgb(12, 12, 76);
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    text-align: center;
+}
+.card-did-you-know{
+    background-color: white;
+    width: 85%;
+    display: flex;
+    padding: 4vh;
+    margin-bottom: 4vh
+}
+.data-did-you-know-card, .icons-did-you-know-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1.5rem;
+    line-height: 3vh;
+}
+.heading-did-you-know-card{
+    font-size: 3vh;
+}
+.twitter-icon-image, .facebook-icon-image{
+    background: #c1f7d5;
+    display: block;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -----STORIES SECTION----- */
+
+.stories-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+}
+.title-stories-section{
+    transform: translateY(50%);
+    width: 45%;
+    padding: 1.5vh 2vh;
+    background-color: rgb(12, 12, 76);
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+}
+.image-stories-section{
+    width: 100%;
+    margin-bottom: 5vh;
+}
+.card-details-stories-section{
+    background-color: rgb(12, 12, 76);
+    text-align: center;
+    padding: 3vh 4vh;
+    line-height: 3.5vh;
+}
+.description-stories-section{
+    color: white;
+    font-size: 3vh;
+    font-weight: 700;
+    margin-bottom: 2vh;
+}
+.name-stories-section{
+    color: white;
+    font-size: 1.5vh;
+}
+.button-stories-section{
+    background-color: #c1f7d5;
+    font-size: 2.3vh;
+    font-weight: 700;
+    padding: 1.2vh 4.5vh;
+    border-radius: 5vh;
+    border: none;
+    margin: 4vh;
+}
+
+/* -----EVENT/LATEST NEWS SECTION ----- */
+
+.events-section{
+    background-color: rgb(12, 12, 76);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 5vh;
+}
+.quote-events-section{
+    font-family: "flood-std-regular";
+    color: white;
+    font-size: 6vh;
+    text-align: center;
+}
+.cards-events-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.image-events-section-card{
+    margin-top: 10vh;
+    width: 100%;
+}
+/* -------Event/News Card------- */
+.card-details-events-section{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: -15%;
+}
+.title-events-section-card{
+    transform: translateY(-630%);
+    text-align: center;
+    padding: 1.5vh 3.5vh;
+    font-weight: 400;
+    width: 60%;
+    background-color: white;
+}
+.heading-events-section-card{
+    color: white;
+    text-align: center;
+    font-size: 3vh;
+    padding: 4vh 0vh;
+}
+.description-events-section-card{
+    color: white;
+    text-align: center;
+    line-height: 3vh;
+}
+.button-events-section-card{
+    background-color: #c1f7d5;
+    font-size: 2.3vh;
+    font-weight: 700;
+    padding: 1.2vh 4.5vh;
+    border-radius: 5vh;
+    border: none;
+    margin: 4vh 0 0 0;
+}
+
+/* --------SUBSCRIBE SECTION-------- */
+
+.subscribe-section{
+    background-color: #c1f7d5;
+    padding: 5vh 3vh 4vh 4vh;
+}
+.heading-subscribe-section{
+    font-size: 3vh;
+    font-weight: 700;
+    padding-bottom: 4vh;
+}
+.form-subscribe-section{
+    width: 100%;
+}
+.input-subscribe-section{
+    padding: 1.5vh 0 1.5vh 2.4vh;
+    border-radius: 5vh;
+    border: none;
+    font-size: 2vh;
+    margin-right: 0.5vh;
+}
+.button-subscribe-section{
+    padding: 1.5vh 2vh;
+    background-color: rgb(12, 12, 76);
+    color: #c1f7d5;
+    border-radius: 5vh;
+    border: none
+}
+
+/* ---------FOOTER SECTION--------- */
+
+.footer-section{
+    padding: 8vh 6vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 30% 30% 40%;
+    grid-column-gap: 3.5vh;
+    grid-row-gap: 6vh;
+}
+.list-footer-section{
+    list-style: none;
+    line-height: 3.5vh;
+    
+}
+.list-title-footer-section{
+    font-size: 1.8vh;
+    font-weight: 500;
+}
+.quote-footer-section{
+    grid-column:1/3;
+    font-family: "flood-std-regular";
+    font-size: 6vh;
+    text-align: right;
+    padding-right: 2vh;
+}
+
+
+/* -------------------------------- */
+
+/* ----- TABLET MEDIA QUERIES ----- */
+
+/* -------------------------------- */
+
+@media (min-width: 480px){
+    .nav-bar{
+        grid-row: 2;
+        grid-column: 1;
+        margin-left: 0;
+    }
+    .navbar-list{
+        display: flex;
+        gap: 25px;
+    }
+    .donate-button{
+        grid-column: 2;
+        grid-row: 1;
+        font-size: 18px;
+        margin: 5%;
+    }
+    .header-content{
+        grid-template-columns: 65% 30%;
+        margin: 0 auto;
+        width: 90%;
+        justify-content: space-between;
+    }
+    /* -----------MAIN CONTAINER------------ */
+
+    /* -----------ISSUE SECTION----------- */
+    
+    .issue-section{
+        padding: 73px calc((100% - 660px)/2);
+    }
+    .issue-brush-text{
+        width: 40%;
+        margin: 0;
+    }
+    .issue-card{
+        top: 50%;
+        margin-left: 0;
+        width: 80%;
+        text-align: left;
+    }
+    .issue-title{
+        transform: translateX(-50%);
+    }
+    .issue-description{
+        padding: 1vh 4vh;
+        text-align: left;
+        line-height: 3.5vh;
+    }
+    .issue-article-link{
+        margin-left: 45px;
+    }
+
+    /* --------TAKE ACTION SECTION--------- */
+    .take-action-section{
+        padding: 73px calc((100% - 660px)/2);
+    }
+    .take-action-title{
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    /* --------WHAT WE DO SECTION---------- */
+    .what-we-do-section{
+        align-items: start;
+        padding: 0 calc((100% - 660px)/2);
+    }
+    .what-we-do-description{
+        padding: 0;
+        text-align: left;
+        font-size: 28px;
+        line-height: 36px;
+    }
+    .card-what-we-do{
+        width: 90%;
+        align-items: start;
+        margin-bottom: 100px;        
+    }
+    .image-what-we-do-card{
+        width: 100%;
+        margin-left: 10%;
+        object-fit: cover;
+        height: 250px;
+    }
+    .title-what-we-do-card{
+        padding: 0 5%;
+        font-size: 28px;
+        line-height: 38px;
+    }
+    .description-what-we-do-card{
+        text-align: left;
+        padding: 0 5%;
+        font-size: 16px;
+        line-height: 25px;
+    }  
+    .button-what-we-do-card{
+        margin-left: 5%;
+    }
+
+    /* ----------DID YOU KNOW SECTION--------- */
+
+    .did-you-know-section{
+        padding: 74px calc((100% - 660px)/2);
+        display: grid;
+        grid-template-columns: 25% 65%;
+        grid-gap: 20px 50px;
+        justify-content: space-between;
+    }
+    .did-you-know-text{
+        margin: 0;
+        padding: 0;
+        grid-column: 1;
+        grid-row: 1;
+    }
+    .did-you-know-button{
+        grid-column: 1;
+        grid-row: 2;
+        margin-left: 0;
+        width: 100%;
+        font-size: 20px;
+        padding: 1.2vh;
+    }
+    
+    /* ------Did you know card------ */
+    .did-you-know-details{
+        position: relative;
+        grid-column: 2;
+        grid-row: 1/5;
+    }
+    .title-did-you-know{
+        position: absolute;
+        top: 0;
+        transform: translateY(-50%);
+    }
+    .card-did-you-know{
+        width: 100%;
+    }
+    .data-did-you-know-card{
+        gap: 10px;
+    }
+
+    /* ----------STORIES SECTION---------- */
+    .stories-section{
+        padding: 74px calc((100% - 660px)/2);
+    }
+    .title-stories-section{
+        width: 35%;
+        transform: translate(-65%, 50%);
+        font-size: 18px;    
+        z-index: 1;
+    }
+    .image-stories-section{
+        width: 90%;
+        transform: translateX(-5%);
+    }
+    .card-details-stories-section{
+        width: 90%;
+        transform: translate(5%, -40%);
+        text-align: left;
+    }
+    .description-stories-section{
+        font-size: 23px;
+    }
+    .button-stories-section{
+        margin-top: -5%;
+    }
+
+    /* ---------EVENT SECTION--------- */
+
+    .events-section{
+        padding: 74px calc((100% - 660px)/2);
+    }
+    .quote-events-section{
+        text-align: left;
+        font-size: 4.7vh;
+    }
+    .cards-events-section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        margin-top: -15%;
+    }
+    .image-events-section-card{
+        width: 50%;
+        margin-right: 45px;
+        margin-top: 170px;
+    }
+    .card-details-events-section{
+        width: 50%;
+        margin-top: 26%;
+        align-items: start;
+    }
+    .title-events-section-card{
+        transform: none;
+        padding: 1vh;
+    }
+    .heading-events-section-card{
+        text-align: left;
+        width: 80%;
+        font-size: 2.5vh;
+        padding: 2vh 0;
+    }
+    .description-events-section-card{
+        text-align: left;
+        line-height: 2.3vh;
+        width: 90%;
+        font-size: 1.4vh;
+    }
+    .button-events-section-card{
+        width: 55%;
+        padding: 10px 0;
+        font-size: 1.8vh;
+    }
+    #latest-news{
+        flex-direction: row-reverse;
+    }
+
+    /* ---------SUBSCRIBE SECTION----------- */
+    .subscribe-section{
+        padding: 74px calc((100% - 660px)/2);
+    }
+    .heading-subscribe-section{
+        width: 80%;
+        font-size: 2vh;
+    }
+    .input-subscribe-section{
+        padding: 1vh 0 1vh 2.4vh;
+        width: 70%;
+    }
+    .button-subscribe-section{
+        margin-left: 10px;
+        width: 26%;
+        padding: 1vh 4.5vh 1vh 2.5vh;
+        font-size: 2vh;
+        font-weight: 600;
+    }
+
+    /* ----------------FOOTER----------------- */
+    .footer-section{
+        grid-template-columns: auto auto auto;
+    }
+    .learn-more-footer-section{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .quote-footer-section{
+        font-size: 5vh;
+        grid-column: 3;
+        grid-row: 2;
+        text-align: left;
+    }
+    
+}
+
+/* --------------------------------- */
+
+/* ----- DESKTOP MEDIA QUERIES ----- */
+
+/* --------------------------------- */
+
+/* @media screen and(min-width: 990px) {
+    .header-content{
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+
+    }
+    .header-title{
+
+    }
+} */
