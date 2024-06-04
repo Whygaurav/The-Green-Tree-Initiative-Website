@@ -257,6 +257,13 @@
     align-items: center;
     padding: 5vh;
 }
+
+.slider{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
 .title-stories-section{
     transform: translateY(50%);
     width: 45%;
@@ -279,7 +286,7 @@
 }
 .description-stories-section{
     color: white;
-    font-size: 3vh;
+    font-size: 22px;
     font-weight: 700;
     margin-bottom: 2vh;
 }
@@ -294,7 +301,6 @@
     padding: 1.2vh 4.5vh;
     border-radius: 5vh;
     border: none;
-    margin: 4vh;
 }
 
 /* -----EVENT/LATEST NEWS SECTION ----- */
@@ -321,7 +327,9 @@
     margin-top: 10vh;
     width: 100%;
 }
+
 /* -------Event/News Card------- */
+
 .card-details-events-section{
     align-items: center;
     display: flex;
@@ -420,7 +428,13 @@
 
 /* -------------------------------- */
 
-@media (min-width: 480px){
+@media (min-width: 480px) and (max-width: 990px){
+    .header-content{
+        grid-template-columns: 65% 30%;
+        margin: 0 auto;
+        width: 90%;
+        justify-content: space-between;
+    }
     .nav-bar{
         grid-row: 2;
         grid-column: 1;
@@ -436,12 +450,7 @@
         font-size: 18px;
         margin: 5%;
     }
-    .header-content{
-        grid-template-columns: 65% 30%;
-        margin: 0 auto;
-        width: 90%;
-        justify-content: space-between;
-    }
+  
     /* -----------MAIN CONTAINER------------ */
 
     /* -----------ISSUE SECTION----------- */
@@ -472,6 +481,7 @@
     }
 
     /* --------TAKE ACTION SECTION--------- */
+  
     .take-action-section{
         padding: 73px calc((100% - 660px)/2);
     }
@@ -482,6 +492,7 @@
     }
     
     /* --------WHAT WE DO SECTION---------- */
+  
     .what-we-do-section{
         align-items: start;
         padding: 0 calc((100% - 660px)/2);
@@ -543,6 +554,7 @@
     }
     
     /* ------Did you know card------ */
+  
     .did-you-know-details{
         position: relative;
         grid-column: 2;
@@ -561,6 +573,7 @@
     }
 
     /* ----------STORIES SECTION---------- */
+  
     .stories-section{
         padding: 74px calc((100% - 660px)/2);
     }
@@ -572,11 +585,10 @@
     }
     .image-stories-section{
         width: 90%;
-        transform: translateX(-5%);
     }
     .card-details-stories-section{
         width: 90%;
-        transform: translate(5%, -40%);
+        transform: translate(10%, -40%);
         text-align: left;
     }
     .description-stories-section{
@@ -637,6 +649,7 @@
     }
 
     /* ---------SUBSCRIBE SECTION----------- */
+   
     .subscribe-section{
         padding: 74px calc((100% - 660px)/2);
     }
@@ -679,13 +692,345 @@
 
 /* --------------------------------- */
 
-/* @media screen and(min-width: 990px) {
-    .header-content{
-        display: grid;
-        grid-template-columns: 20% 60% 20%;
+@media (min-width: 990px) {
 
+    /* ------------HEADER SECTION-------------- */
+    .header-content{
+        padding: 0 calc((100% - 1140px)/2);
+        grid-template-columns: 30% 35% 20%;
+        margin-bottom: 0;
     }
     .header-title{
-
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 16px;
+        line-height: 24px;
     }
-} */
+    .nav-bar{
+        grid-column: 2;
+        grid-row: 1;
+    }
+    .navbar-list{
+        display: flex;
+        margin-top: 5%;
+        justify-content: space-between;
+        font-size: 15px;
+    }
+    .donate-button{
+        grid-column: 3;
+        grid-row: 1;
+        font-size: 14px;
+        font-weight: 500;
+        margin-top: 4%;
+        width: 70%;
+    }
+
+
+    /* ------------MAIN BODY-------------- */
+
+    /* ----------ISSUE SECTION----------- */
+
+    .issue-section{
+        padding: 0 calc((100% - 1140px)/2);
+    }
+    .issue-brush-text{
+        right: 20%;
+        top: 150px;
+        width: 20%;
+        font-size: 6vh;
+    }
+    .issue-card{
+        padding: 2vh;
+        width: 30%;
+        height: 60%;
+        top: 12vh;
+        text-align: left;
+        margin-left: 0;
+    }
+    .issue-title{
+        transform: translate(-35%, 30%);
+        font-size: 17px;
+    }
+    .issue-description{
+        padding: 25px;
+        text-align: left;
+        font-size: 4.5vh;
+        line-height: 5vh;
+    }
+    .issue-article-link{
+        margin-left: 2.5vh;
+        text-align: left;
+    }
+
+    /* -------TAKE ACTION SECTION------- */
+
+    .take-action-section{
+        padding: 75px calc((100% - 1140px)/2);
+    }
+    .take-action-title{
+        top: -10%;
+        left: 45%;
+    }
+    .action-cards{
+        margin-left: 50px;
+        display: flex;
+        justify-content: space-around;
+        width: 90%;
+        padding-right: 5px;
+        font-size: 13px;
+        line-height: 24px;
+        font-weight: 300
+    }
+    .action-name{
+        font-size: 24px;
+        line-height: 50px;
+    }
+
+    /* -----WHAT WE DO SECTION----- */
+
+    .what-we-do-section{
+        padding: 75px calc((100% - 1140px)/2);
+        display: grid;
+        grid-template-rows: auto auto auto;
+        grid-template-columns: auto auto auto;
+        
+    }
+    .what-we-do-title{
+        grid-row: 1;
+        grid-column: 1;
+        width: 55%;
+        text-align: center;
+    }
+    .what-we-do-description{
+        grid-row: 2;
+        grid-column: 1/4;
+        text-align: left;
+        font-size: 32px;
+        margin-left: -4%;
+        margin-right: 15px;
+        margin-bottom: 90px;
+    }
+
+    /* -----What we do card----- */
+
+    .card-what-we-do{
+        grid-row: 3;
+        width: 81%;
+        margin-right: -38px;
+        align-items: start;
+    }
+    .image-what-we-do-card{
+        width: 35vh;
+        margin-left: 20px;
+        height: 230px;
+        padding: 15px;
+        margin-bottom: 16px;
+    }
+    .title-what-we-do-card{
+        font-size: 23px;
+        padding-left: 40px;
+        margin-bottom: 16px;
+        width: 90%;
+    }
+    .description-what-we-do-card{
+        text-align: left;
+        font-size: 16px;
+        line-height: 24px;
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+    .button-what-we-do-card{
+        margin: 40px;
+        font-size: 18px;
+        width: 50%;
+        padding: 10px 5px;
+    }
+
+    /* -----DID YOU KNOW SECTION----- */
+
+    .did-you-know-section{
+        padding: 75px calc((100% - 1140px)/2);
+        display: grid;
+        grid-template-columns: 30% 55%;
+        grid-gap: 20px 50px;
+        justify-content: space-between;
+    }
+
+    .did-you-know-text{
+        padding: 0;
+        margin: 0;
+        grid-column: 1;
+        grid-row: 1;
+        font-size: 60px;
+        margin-top: 65px;
+    } 
+    .did-you-know-button{
+        grid-column: 1;
+        grid-row: 2;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 0;
+        width: 50%;
+    } 
+    
+    /* ------Did you know card------ */
+
+    .did-you-know-details{
+        grid-column: 2;
+        grid-row: 1/5;
+        align-items: end;
+    }
+    .title-did-you-know{
+        transform: translate(-180%, 50%);
+    }
+    .card-did-you-know{
+        padding: 55px;
+    }
+    .data-did-you-know-card{
+        margin-right: 0;
+    }
+    .icons-did-you-know-card{
+        margin-left: 10%;
+    }
+
+    /* ----------STORIES SECTION---------- */
+
+    .stories-section{
+        padding: 75px calc((100% - 1140px)/2) ;
+    }
+
+    .slider{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        overflow: hidden;
+        position: relative;
+        height: 550px;
+    }
+
+    .title-stories-section{
+        width: 15%;
+        z-index: 1;
+        font-weight: 700;
+    }
+    .image-stories-section{
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 60%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .card-details-stories-section{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: 45%;
+        text-align: left;
+        transform: translateY(-50%);
+    }
+    .description-stories-section{
+        font-size: 24px;
+    }
+    .button-stories-section{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        font-size: 20px;
+    }
+
+    /* ---------EVENT SECTION--------- */
+
+    .events-section{
+        padding: 75px calc((100% - 1140px)/2);
+        align-items: start;
+    }
+    .quote-events-section{
+        text-align: left;
+        width: 65%;
+        font-size: 6.2vh;
+        margin-bottom: 40px;
+    }
+    .cards-events-section{
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .image-events-section-card{
+        width: 40%;
+        margin-right: 10%;
+        margin-top: 0;
+    }
+    .card-details-events-section{
+        width: 40%;
+        margin: 55px 0;
+        align-items: start;
+    }
+    .title-events-section-card{
+        transform: none;
+        width: 40%;
+        padding: 1vh 10px;
+    }
+    .heading-events-section-card{
+        text-align: left;
+    }
+    .description-events-section-card{
+        text-align: left;
+    }
+    .button-events-section-card{
+        width: 35%;
+        padding: 10px 0;
+        font-size: 1.8vh;
+    }
+    #latest-news{
+        flex-direction: row-reverse;
+    }
+    #image-latest-news-events-section-card{
+        margin-left: 10%;
+        margin-right: 0;
+    }
+
+    /* ---------SUBSCRIBE SECTION----------- */
+
+    .subscribe-section{
+        padding: 75px calc((100% - 1140px)/2);
+        display: grid;
+        grid-template-columns: 50% 50%;
+    }
+    .heading-subscribe-section{
+        font-size: 22px;
+        padding: 20px;
+        grid-column: 1;
+    }
+    .form-subscribe-section{
+        grid-column: 2;
+        display: flex;
+        align-items: center;
+    }
+    .input-subscribe-section{
+        padding: 15px;
+        font-size: 18px;
+        width: 70%;
+        margin-right: 40px;
+    }
+    .button-subscribe-section{
+        grid-column: 3;
+        font-size: 18px;
+        padding: 15px 25px;
+        width: 30%;
+    }
+
+    /* ----------------FOOTER----------------- */
+
+    .footer-section{
+        padding: 100px calc((100% - 1140px)/2);
+        grid-template-columns: 18% 18% 14% 14% 30%;
+    }
+    .quote-footer-section{
+        grid-column: 5;
+        margin-right: 90px;   
+        font-size: 50px;
+    }
+}
